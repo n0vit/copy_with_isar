@@ -1,4 +1,4 @@
-# Your Package Name
+# Copy With Isar
 
 A package for auto-generating `copyWith` methods in Dart classes.
 
@@ -36,5 +36,5 @@ To use this package, add it to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  copy_with_isar: ^0.0.1
+  copy_with_isar: ^0.0.3
 ```

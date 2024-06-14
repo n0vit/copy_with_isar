@@ -1,8 +1,7 @@
 name: copy_with_isar
 description: Small lib for add annotations to isar models.
 repository: "https://github.com/n0vit/copy_with_isar"
-version: 0.0.2
-# repository: https://github.com/my_org/my_repo
+version: 0.0.3
 
 environment:
   sdk: ^3.3.4

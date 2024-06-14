@@ -1,7 +1,12 @@
+## 0.0.3
+
+- Update readme
+- Fix lint error
+
 ## 0.0.2
 
 - Update readme
-- Smal fixes
+- Small fixes
 
 ## 0.0.1
 
