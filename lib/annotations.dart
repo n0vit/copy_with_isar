@@ -1,0 +1,3 @@
+class IsarCopy {
+  const IsarCopy();
+}

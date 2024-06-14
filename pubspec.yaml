@@ -1,0 +1,19 @@
+name: copy_with_isar
+description: A starting point for Dart libraries or applications.
+version: 1.0.0
+# repository: https://github.com/my_org/my_repo
+
+environment:
+  sdk: ^3.3.4
+
+# Add regular dependencies here.
+dependencies:
+  build: ^2.0.0
+  source_gen: ^1.0.0
+  analyzer: ^4.0.0
+
+dev_dependencies:
+  build_runner: ^2.4.9
+  lints: ^3.0.0
+  test: ^1.24.0
+  build_test: ^2.0.0

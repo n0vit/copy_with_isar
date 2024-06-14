@@ -1,0 +1,39 @@
+# targets:
+#   $default:
+#     builders:
+#       copy_with_isar|icopy:
+#         enabled: true
+#         generate_for:
+#           - lib/**/*.dart
+#           - example/**/*.dart
+#       source_gen|combining_builder:
+#         options:
+#           ignore_for_file:
+#             - "type=lint"
+# Read about `build.yaml` at https://pub.dev/packages/build_config
+targets:
+  $default:
+    builders:
+      # Configure the builder `pkg_name|builder_name`
+      # In this case, the member_count builder defined in `../example`
+      copy_with_isar|icopy:
+        # Only run this builder on the specified input.
+        generate_for:
+          - lib/**/*.dart
+          - example/*.dart
+
+      # The end-user of a builder which applies "source_gen|combining_builder"
+      # may configure the builder to ignore specific lints for their project
+      source_gen|combining_builder:
+        options:
+          ignore_for_file:
+            - "type=lint"
+
+builders:
+  icopy:
+    import: "package:copy_with_isar/builder.dart"
+    builder_factories: ["copyWithBuilder"]
+    build_extensions: { ".dart": [".icopy.dart"] }
+    auto_apply: dependents
+    build_to: source
+    applies_builders: ["source_gen|combining_builder"]
