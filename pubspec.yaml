@@ -1,6 +1,7 @@
 name: copy_with_isar
-description: A starting point for Dart libraries or applications.
-version: 1.0.0
+description: Small lib for add annotations to isar models.
+repository: "https://github.com/n0vit/copy_with_isar"
+version: 0.0.1
 # repository: https://github.com/my_org/my_repo
 
 environment:

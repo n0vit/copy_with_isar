@@ -1,3 +1,3 @@
-## 1.0.0
+## 0.0.1
 
-- Initial version. add CopyIsar annotation
+- Initial version. add annotation
